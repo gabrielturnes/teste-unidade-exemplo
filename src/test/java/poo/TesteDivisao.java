@@ -19,6 +19,7 @@ public class TesteDivisao {
                 { 2, 2, 1 },
                 { 2, -1, -2 },
                 { 0, -1, 0 },
+                {1, 2, 0.5}
         });
     }
 
@@ -34,6 +35,6 @@ public class TesteDivisao {
     @Test
     public void teste(){
         DivideInteiros obj = new DivideInteiros();
-        assertEquals("erro no teste", resultado, obj.divide(operandoUm, operandoDois), 0);
+        assertEquals("erro no teste", resultado, obj.divide(operandoUm, operandoDois), 5);
     }
 }
